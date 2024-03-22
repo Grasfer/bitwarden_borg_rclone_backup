@@ -31,7 +31,7 @@ compact_exit=$?
 
 #rclone syncing with backblaze.
 info "rclone sync to backblaze"
-rclone sync bwbackup backblaze:my-backup-vms
+rclone sync bwbackup backblaze:<backblaze bucket>
 rclone_exit=$?
 
 # use highest exit code as global exit code
